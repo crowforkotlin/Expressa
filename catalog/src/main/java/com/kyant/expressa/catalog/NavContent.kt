@@ -17,6 +17,7 @@ import androidx.navigation3.runtime.NavEntry
 import androidx.navigation3.ui.NavDisplay
 import com.kyant.expressa.catalog.components.Buttons
 import com.kyant.expressa.catalog.components.IconButtons
+import com.kyant.expressa.catalog.demos.Stability
 import com.kyant.expressa.catalog.styles.ColorSchemes
 import com.kyant.expressa.catalog.styles.Elevation
 import com.kyant.expressa.catalog.styles.MotionSchemes
@@ -88,6 +89,8 @@ fun NavContent() {
 
             Components.Buttons -> NavEntry(key) { Buttons() }
             Components.IconButtons -> NavEntry(key) { IconButtons() }
+
+            Demos.Stability -> NavEntry(key) { Stability() }
 
             else -> NavEntry(Unit) { Text("Unknown route") }
         }

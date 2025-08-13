@@ -41,6 +41,11 @@ fun Catalog(backStack: MutableList<Any>) {
             CategoryItem({ backStack.add(Components.Buttons) }) { Text("Buttons") }
             CategoryItem({ backStack.add(Components.IconButtons) }) { Text("Icon buttons") }
         }
+
+        Subtitle { Text("Demos") }
+        Category {
+            CategoryItem({ backStack.add(Demos.Stability) }) { Text("Stability") }
+        }
     }
 }
 

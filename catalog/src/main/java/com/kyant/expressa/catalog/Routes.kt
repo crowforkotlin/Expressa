@@ -13,3 +13,7 @@ sealed interface Components {
     data object Buttons : Components
     data object IconButtons : Components
 }
+
+sealed interface Demos {
+    data object Stability : Demos
+}
